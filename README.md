@@ -56,3 +56,13 @@ Functional Examples are included in examples directory
 Name | Description | Type | Default | Required
 --- | ----- | ------- | -------- | ---
 dataset_id | Unique ID for the dataset being provisioned |
+
+
+
+## Execution
+```
+terraform init
+terraform validate
+terraform plan
+terraform validate
+```
