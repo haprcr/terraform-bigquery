@@ -49,7 +49,7 @@ variable "tables" {
   description = "A list of objects which include table_id, schema, time_partitioning."
   type = list(object({
     table_id  = string,
-    schema = optional(string),
+    schema = any,
     time_partitioning = object({
       field                    = string,
       type                     = string,
@@ -66,7 +66,7 @@ variable "external_tables" {
         ignore_unknown_values = optional(bool),
         max_bad_records = optional(number),
         source_uris = list(string),
-        schema = optional(string),
+        schema = any,
         source_format = string,
         csv_options = object({
             quote = string,
