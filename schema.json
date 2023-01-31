@@ -1,0 +1,34 @@
+[
+        {
+            "name": "id",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+        },
+        {
+            "name": "name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+        },
+        {
+            "name": "date",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE"
+        },
+        {
+            "name": "user_id",
+            "type": "INTEGER",
+            "mode": "NULLABLE"            
+        },
+        {
+            "name": "class",
+            "type": "INTEGER",
+            "mode": "NULLABLE"  
+
+        },
+        {
+            "name": "tag_based",
+            "type": "BOOLEAN",
+            "mode": "NULLABLE"  
+        }
+]
+ 
