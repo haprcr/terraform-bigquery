@@ -51,8 +51,8 @@ variable "tables" {
     table_id  = string,
     schema = any,
     time_partitioning = object({
-      field                    = string,
-      type                     = string,
+      field = string,
+      type = string,
     }),
   }))
 }
