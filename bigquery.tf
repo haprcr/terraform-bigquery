@@ -19,7 +19,7 @@ resource "google_bigquery_table" "main" {
   for_each            = local.tables
   dataset_id          = google_bigquery_dataset.main.dataset_id
   table_id            = each.key
-  schema              = file("schema.json")
+  schema              = file(each.value.schema)
   project             = var.project_id
   deletion_protection = var.deletion_protection
 
