@@ -1,6 +1,10 @@
 variable "dataset_id" {
   description = "Unique ID for the dataset being provisioned."
   type        = string
+  validation{
+    condition = can(regex("^[a-zA-Z0-9_]*$", var.dataset_id))
+    error_message = "ERROR: Dataset ID must contain only Letters(uppercase or lowercase), number, and underscores"
+  }
 }
 
 variable "dataset_name" {
